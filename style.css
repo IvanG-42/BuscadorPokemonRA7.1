@@ -1,0 +1,26 @@
+* { box-sizing: border-box; }
+body { font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 20px; color: #111; }
+.title { text-align: center; margin: 10px 0 20px; }
+
+.controls { display: flex; flex-direction: column; align-items: center; gap: 4px; margin-bottom: 16px; font-size: 14px; }
+
+.cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; padding: 12px; border: 1px solid #333; max-width: 900px; margin: 0 auto; min-height: 120px; }
+.card { width: 130px; border: 1px solid #ddd; border-radius: 8px; padding: 12px 8px; text-align: center; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.08); transition: transform .15s, box-shadow .15s; }
+.card:hover { transform: translateY(-3px); box-shadow: 0 4px 10px rgba(0,0,0,.15); }
+.card-img { width: 96px; height: 96px; object-fit: contain; image-rendering: pixelated; }
+.card-name { font-weight: bold; font-size: 14px; margin: 8px 0; }
+
+.btn { padding: 3px 10px; border: 1px solid #888; border-radius: 4px; background: #efefef; cursor: pointer; font-size: 12px; }
+.btn:hover:not(:disabled) { background: #ddd; }
+.btn:disabled { opacity: .45; cursor: not-allowed; }
+
+.pagination { display: flex; justify-content: center; gap: 6px; margin-top: 10px; }
+.error { max-width: 900px; margin: 0 auto 12px; padding: 10px; border: 1px solid #c00; background: #fdeaea; color: #900; border-radius: 4px; text-align: center; }
+
+.detail { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.detail-name { font-size: 22px; margin: 0; }
+.detail-img { width: 160px; height: 160px; object-fit: contain; image-rendering: pixelated; }
+.detail-info { font-size: 14px; }
+.table { border-collapse: collapse; width: 100%; max-width: 680px; font-size: 14px; }
+.table th, .table td { border: 1px solid #555; padding: 6px 10px; text-align: left; }
+.table th { background: #f0f0f0; }
